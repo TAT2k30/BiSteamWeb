@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Add styles for the body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #4460FB;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Style the header */
+        header {
+            background-color: #ffffff; 
+            color: #fff;
+            padding: 20px 0;
+            text-align: center; 
+        }
+
+        
+        .container {
+            max-width: 100%; 
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: space-between;
+            align-items: center;
+        }
+
+       
+        .logo {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px; 
+        }
+
+        
+        .content {
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+       
+        .content p {
+            flex-basis: calc(33.33% - 20px);
+            margin-bottom: 20px;
+            background-color: #ffffff;
+            color: #333; 
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            border: 1px solid #ccc; 
+            border-radius: 5px; 
+        }
+
+        @media (max-width: 768px) {
+            .content p {
+                flex-basis: calc(50% - 20px);
+            }
+        }
+
+        .content p img {
+          width: 90px;
+          display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Logo/image-removebg-preview.png" width="125px">
+    </header>
+    <div class="container">
+        <div class="content">
+            <p>
+                <img src="Logo/Screenshot 2023-09-10 175542.png">
+                <a href="PDF doanload file/racing car.pdf">Racing car</a>
+            </p>
+            <p>
+                <img src="Logo/b94c9ed32b712e451cfd7ff5d82b6c4b.jpg">
+                Floor washer
+            </p>
+           
+          
+        </div>
+    </div>
+</body>
+
+</html>
