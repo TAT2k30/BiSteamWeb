@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Page Title</title>
+    <title>BiSteam study source</title>
     <style>
         /* Reset some default styles */
         * {
@@ -14,7 +14,7 @@
 
         /* Add styles for the body */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
             background-color: #4460FB;
             margin: 0;
             padding: 0;
@@ -23,46 +23,52 @@
         /* Style the header */
         header {
             background-color: #ffffff; 
-            color: #fff;
+            color: #000000;
             padding: 20px 0;
             text-align: center; 
         }
 
-        
         .container {
             max-width: 100%; 
             margin: 0 auto;
             padding: 20px;
             display: flex;
             flex-wrap: wrap; 
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
         }
 
-       
         .logo {
             max-width: 100%;
             height: auto;
             margin-bottom: 20px; 
         }
 
-        
         .content {
             font-size: 16px;
             margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
-       
         .content p {
-            flex-basis: calc(33.33% - 20px);
+            flex-basis: calc(25% - 20px);
             margin-bottom: 20px;
-            background-color: #ffffff;
+            background-color: #fff;
             color: #333; 
             padding: 20px;
             text-align: center;
             cursor: pointer;
             border: 1px solid #ccc; 
-            border-radius: 5px; 
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+            position: relative;
+        }
+
+        .content p:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
 
         @media (max-width: 768px) {
@@ -72,8 +78,29 @@
         }
 
         .content p img {
-          width: 90px;
-          display: block;
+            width: 200px; /* Đặt kích thước chung cho các hình */
+            display: block;
+            margin-bottom: 10px;
+            height: auto;
+        }
+
+        /* Hide default link styling */
+        .content p a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            margin-top: 10px;
+        }
+
+        /* Style for the text below the images */
+        .text-below {
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            font-size: 14px;
+            color: #555;
         }
     </style>
 </head>
@@ -83,21 +110,37 @@
     </header>
     <div class="container">
         <div class="content">
-            <p>
+            <p onclick="window.open('racing car.pdf', '_blank')">
                 <img src="Logo/Screenshot 2023-09-10 175542.png">
-                <a href="racing car.pdf">Racing car</a>
+                <span class="text-below"><b>Racing car</b></span>
             </p>
             <p>
                 <img src="Logo/b94c9ed32b712e451cfd7ff5d82b6c4b.jpg">
-                Floor washer
+                <span class="text-below"><b>Floor washer</b></span>
+            </p>
+            <p onclick="window.open('PDF doanload file/cable car02.pdf', '_blank')">
+                <img src="PDF doanload file/Screenshot 2023-11-02 165352.png" >
+                <span class="text-below"><b>Cable car</b></span>
+            </p>
+            <p onclick="window.open('PDF doanload file/Untitled Model.pdf', '_blank')">
+                <img src="PDF doanload file/Screenshot 2023-12-09 002240.png">
+                <span class="text-below"><b>Santa Claus Sleigh</b></span>
+            </p>
+        </div>
+        <div class="content">
+            <p>
+                <img src="https://i.pinimg.com/originals/e8/0c/f3/e80cf36f4eb13dca261438a58d39b390.gif">
+                <span class="text-below">Comming soon...</span>
             </p>
             <p>
-                <img src="PDF doanload file/Screenshot 2023-11-02 165352.png">
-                <a href="PDF doanload file/cable car02.pdf">Cable car</a>
+                <img src="https://i.pinimg.com/originals/e8/0c/f3/e80cf36f4eb13dca261438a58d39b390.gif">
+                <span class="text-below">Comming soon...</span>
             </p>
-          
+            <p>
+                <img src="https://i.pinimg.com/originals/e8/0c/f3/e80cf36f4eb13dca261438a58d39b390.gif" >
+                <span class="text-below">Comming soon...</span>
+            </p>
         </div>
     </div>
 </body>
-
 </html>
