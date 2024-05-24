@@ -6,48 +6,72 @@
     <title>BiSteam study source</title>
     <link rel="stylesheet" href="index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 <header>
-    <img src="Logo/image-removebg-preview.png" width="125px">
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="Logo/image-removebg-preview.png" width="125px" alt="">
+            </a>
+            <form class="d-flex" id="searchForm">
+                <input class="form-control me-2" type="search" id="searchInput" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
 </header>
 <div class="boss">
     <div class="container">
-        <div class="content">
-            <p onclick="window.open('PDF doanload file/racing car.pdf', '_blank')">
+        <div style="background-color: #fff023; border-radius: 20px;">
+            <h1 style="padding: 4px 50px">Level 3 Robots</h1>
+        </div>
+        <div class="content" style=" background-color: #2f4ae4; border-radius: 20px; width: 100%;">
+            <p class="item" data-name="Racing car">
                 <img src="Logo/Screenshot 2023-09-10 175542.png">
                 <span class="text-below"><b>Racing car</b></span>
             </p>
-            <p onclick="window.open('PDF doanload file/cable car02.pdf', '_blank')">
+            <p class="item" data-name="Cable car">
                 <img src="PDF doanload file/Screenshot 2023-11-02 165352.png" >
                 <span class="text-below"><b>Cable car</b></span>
             </p>
-            <p onclick="window.open('PDF doanload file/Untitled Model.pdf', '_blank')">
+            <p class="item" data-name="Santa Claus Sleigh">
                 <img src="PDF doanload file/Screenshot 2023-12-09 002240.png">
                 <span class="text-below"><b>Santa Claus Sleigh</b></span>
             </p>
-            <p onclick="window.open('PDF doanload file/Sumo_Walking.pdf', '_blank')">
+            <p class="item" data-name="Sumo Walking">
                 <img src="PDF doanload file/Sumo_Walking.png">
                 <span class="text-below"><b>Sumo Walking</b></span>
             </p>
-            <p onclick="window.open('PDF doanload file/piano.pdf', '_blank')">
+            <p class="item" data-name="Piano">
                 <img src="PDF doanload file/piano.png">
                 <span class="text-below"><b>Piano</b></span>
             </p>
+            <p class="item" data-name="Line Follower">
+                <img src="PDF doanload file/LineFollower.png">
+                <span class="text-below"><b>Line Follower</b></span>
+            </p>
         </div>
     </div>
-    <hr class="hrStyle"/>
-    <div class="level3-header">
-        <div class="level3-header-box">
-            <h3 class="text-white">LEVEL 3 ROBOTS</h3>
-        </div>
-    </div>
+
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script>
-    function handleClick() {
-        alert("Hello")
-    }
+    $(document).ready(function() {
+        $('#searchForm').submit(function(event) {
+            event.preventDefault();
+            const searchInput = $('#searchInput').val().toLowerCase();
+            $('.item').each(function() {
+                const itemName = $(this).data('name').toLowerCase();
+                if (itemName.includes(searchInput)) {
+                    $(this).show();
+                } else {
+                    $(this).hide();
+                }
+            });
+        });
+    });
 </script>
 </body>
 </html>
