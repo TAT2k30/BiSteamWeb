@@ -3,24 +3,35 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  padding: 20px 0;
+  background-color: #2f4ae4;
+  color: #fff;
+}
+
+.navbar-brand img {
+  max-width: 100px;
+}
+
 .boss {
   background-color: #2f4ae4;
   height: 10vh;
 }
-/* Style the header */
-header {
-  padding: 20px 0;
-}
 
 .container {
-  max-width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -30,11 +41,12 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 100%;
 }
+
 .content p {
-  
   flex-basis: calc(25% - 20px);
-  margin-bottom: 20px;
+  margin: 10px;
   background-color: #fff;
   color: #333;
   padding: 20px;
@@ -42,9 +54,9 @@ header {
   cursor: pointer;
   border: 1px solid #ccc;
   border-radius: 10px;
-  transition: transform 0.3s ease-in-out;
+  box-shadow: 5px 3px #74747496;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   position: relative;
-  margin: 10px;
 }
 
 .content p:hover {
@@ -59,13 +71,13 @@ header {
 }
 
 .content p img {
-  width: 200px; /* Set a common size for images */
+  width: 200px; 
   display: block;
   margin-bottom: 10px;
   height: auto;
+  border-radius: 10px;
 }
 
-/* Style for the text below the images */
 .text-below {
   position: absolute;
   bottom: 10px;
@@ -76,21 +88,19 @@ header {
   color: #555;
 }
 
-/* Style for level 3 header */
 .level3-header {
-    padding: 20px 0;
-    text-align: center;
+  padding: 20px 0;
+  text-align: center;
 }
 
 .level3-header h3 {
-    display: inline-block;
-    padding: 20px;
-    background-color: #333;
-    color: #ffffff;
-    border-radius: 10px;
+  display: inline-block;
+  padding: 20px;
+  background-color: #333;
+  color: #ffffff;
+  border-radius: 10px;
 }
 
 .level3-header-box {
-    background-color: #333;
-    
+  background-color: #333;
 }
