@@ -1,106 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BiSteam study source</title>
-    <link rel="stylesheet" href="index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-</head>
-<body>
-<header>
-    <nav class="navbar navbar-light bg-light">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="Logo/image-removebg-preview.png" alt="Logo">
-            </a>
-            <form class="d-flex" id="searchForm">
-                <input class="form-control me-2" type="search" id="searchInput" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+          <a class="navbar-brand" href="#">
+            <img src="Logo/image-removebg-preview.png" alt="Logo" />
+          </a>
+          <form class="d-flex" id="searchForm">
+            <input
+              class="form-control me-2"
+              type="search"
+              id="searchInput"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
         </div>
-    </nav>
-</header>
-<div class="boss">
-    <div class="container">
-        <div style="background-color: #fff023; border-radius: 20px;">
-            <h1 style="padding: 4px 50px">Level 3 Robots</h1>
+      </nav>
+    </header>
+    <div class="boss">
+      <div class="container">
+        <div style="background-color: #fff023; border-radius: 20px">
+          <h1 style="padding: 4px 50px">Level 3 Robots</h1>
         </div>
         <div class="content">
-            <p class="item" data-name="Racing car" data-pdf="PDF doanload file/pdfs/racing car.pdf">
-                <img src="Logo/Screenshot 2023-09-10 175542.png" alt="Racing car">
-                <span class="text-below"><b>Racing car</b></span>
-            </p>
-            <p class="item" data-name="Cable car" data-pdf="PDF doanload file/pdfs/cable car02.pdf">
-                <img src="PDF doanload file/logoPngs/Screenshot 2023-11-02 165352.png" alt="Cable car">
-                <span class="text-below"><b>Cable car</b></span>
-            </p>
-            <p class="item" data-name="Santa Claus Sleigh" data-pdf="PDF doanload file/pdfs/Untitled Model.pdf">
-                <img src="PDF doanload file/logoPngs/Screenshot 2023-12-09 002240.png" alt="Santa Claus Sleigh">
-                <span class="text-below"><b>Santa Claus Sleigh</b></span>
-            </p>
-            <p class="item" data-name="Sumo Walking" data-pdf="PDF doanload file/pdfs/Sumo_Walking.pdf">
-                <img src="PDF doanload file/logoPngs/Sumo_Walking.png" alt="Sumo Walking">
-                <span class="text-below"><b>Sumo Walking</b></span>
-            </p>
-            <p class="item" data-name="Piano" data-pdf="PDF doanload file/pdfs/piano.pdf">
-                <img src="PDF doanload file/logoPngs/piano.png" alt="Piano">
-                <span class="text-below"><b>Piano</b></span>
-            </p>
-            <p class="item" data-name="Line Follower" data-pdf="PDF doanload file/pdfs/Line_Following.pdf">
-                <img src="PDF doanload file/logoPngs/LineFollower.png" alt="Line Follower">
-                <span class="text-below"><b>Line Follower</b></span>
-            </p>
-            <p class="item" data-name="Drawing Machine" data-pdf="PDF doanload file/pdfs/drawing machine.pdf">
-                <img src="PDF doanload file/logoPngs/image-removebg-preview.png" alt="Drawing Machine">
-                <span class="text-below"><b>Drawing Machine</b></span>
-            </p>
+          <p
+            class="item"
+            data-name="Racing car"
+            data-pdf="PDF doanload file/pdfs/racing car.pdf"
+          >
+            <img src="Logo/Screenshot 2023-09-10 175542.png" alt="Racing car" />
+            <span class="text-below"><b>Racing car</b></span>
+          </p>
+          <p
+            class="item"
+            data-name="Cable car"
+            data-pdf="PDF doanload file/pdfs/cable car02.pdf"
+          >
+            <img
+              src="PDF doanload file/logoPngs/Screenshot 2023-11-02 165352.png"
+              alt="Cable car"
+            />
+            <span class="text-below"><b>Cable car</b></span>
+          </p>
+          <p
+            class="item"
+            data-name="Santa Claus Sleigh"
+            data-pdf="PDF doanload file/pdfs/Untitled Model.pdf"
+          >
+            <img
+              src="PDF doanload file/logoPngs/Screenshot 2023-12-09 002240.png"
+              alt="Santa Claus Sleigh"
+            />
+            <span class="text-below"><b>Santa Claus Sleigh</b></span>
+          </p>
+          <p
+            class="item"
+            data-name="Sumo Walking"
+            data-pdf="PDF doanload file/pdfs/Sumo_Walking.pdf"
+          >
+            <img
+              src="PDF doanload file/logoPngs/Sumo_Walking.png"
+              alt="Sumo Walking"
+            />
+            <span class="text-below"><b>Sumo Walking</b></span>
+          </p>
+          <p
+            class="item"
+            data-name="Piano"
+            data-pdf="PDF doanload file/pdfs/piano.pdf"
+          >
+            <img src="PDF doanload file/logoPngs/piano.png" alt="Piano" />
+            <span class="text-below"><b>Piano</b></span>
+          </p>
+          <p
+            class="item"
+            data-name="Line Follower"
+            data-pdf="PDF doanload file/pdfs/Line_Following.pdf"
+          >
+            <img
+              src="PDF doanload file/logoPngs/LineFollower.png"
+              alt="Line Follower"
+            />
+            <span class="text-below"><b>Line Follower</b></span>
+          </p>
+          <p
+            class="item"
+            data-name="Drawing Machine"
+            data-pdf="PDF doanload file/pdfs/drawing machine.pdf"
+          >
+            <img
+              src="PDF doanload file/logoPngs/image-removebg-preview.png"
+              alt="Drawing Machine"
+            />
+            <span class="text-below"><b>Drawing Machine</b></span>
+          </p>
+          <p
+            class="item"
+            data-name="AT-AT Robot"
+            data-pdf="PDF doanload file/pdfs/AT-AT Robot.pdf"
+          >
+            <img
+              src="PDF doanload file/logoPngs/AT-AT Robot.png"
+              alt="AT-AT Robot"
+            />
+            <span class="text-below"><b>AT-AT Robot</b></span>
+          </p>
         </div>
+      </div>
     </div>
-</div>
 
-<!-- Modal -->
-<div class="modal fade" id="pdfModal" tabindex="-1" aria-labelledby="pdfModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="pdfModal"
+      tabindex="-1"
+      aria-labelledby="pdfModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
         <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="pdfModalLabel">PDF Viewer</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <iframe id="pdfViewer" src="" width="100%" height="600px"></iframe>
-            </div>
+          <div class="modal-header">
+            <h5 class="modal-title" id="pdfModalLabel">PDF Viewer</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <iframe id="pdfViewer" src="" width="100%" height="600px"></iframe>
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-    $(document).ready(function() {
-        $('#searchForm').submit(function(event) {
-            event.preventDefault();
-            const searchInput = $('#searchInput').val().toLowerCase();
-            $('.item').each(function() {
-                const itemName = $(this).data('name').toLowerCase();
-                if (itemName.includes(searchInput)) {
-                    $(this).show();
-                } else {
-                    $(this).hide();
-                }
-            });
-        });
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-        // Xử lý sự kiện click để hiển thị PDF trong modal
-        $('.item').click(function() {
-            const pdfUrl = $(this).data('pdf');
-            if (pdfUrl) {
-                $('#pdfViewer').attr('src', pdfUrl);
-                $('#pdfModal').modal('show');
+    <script>
+      $(document).ready(function () {
+        $("#searchForm").submit(function (event) {
+          event.preventDefault();
+          const searchInput = $("#searchInput").val().toLowerCase();
+          $(".item").each(function () {
+            const itemName = $(this).data("name").toLowerCase();
+            if (itemName.includes(searchInput)) {
+              $(this).show();
+            } else {
+              $(this).hide();
             }
+          });
         });
-    });
-</script>
-</body>
+
+        // Open PDF in a new tab
+        $(".item").click(function () {
+          const pdfUrl = $(this).data("pdf");
+          if (pdfUrl) {
+            window.open(pdfUrl, "_blank");
+          }
+        });
+      });
+    </script>
+  </body>
 </html>
