@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Level 2 - BiSteam</title>
+  <link rel="stylesheet" href="../../assets/css/index.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="../../assets/images/logo/image-removebg-preview.png">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+  <!-- Matrix Background -->
+  <canvas id="matrixCanvas"></canvas>
+
+  <header>
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../../index.html">
+          <img src="../../assets/images/logo/image-removebg-preview.png" alt="Logo" />
+        </a>
+        <form class="d-flex" id="searchForm">
+          <input class="form-control me-2" type="search" id="searchInput" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+  </header>
+  <div class="boss">
+    <div class="container">
+      <div class="level-title-card">
+        <div class="level-number">Level 2</div>
+        <h1 class="level-title">Alpha Set</h1>
+        <div class="level-subtitle">Intermediate Robotics</div>
+      </div>
+
+      <!-- Accordion for Sub-levels -->
+      <div class="accordion mt-4" id="subLevelAccordion">
+
+        <!-- Sub-level 1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              <strong>Level 2.1</strong> - Alpha Series Cơ bản
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#subLevelAccordion">
+            <div class="accordion-body">
+              <!-- Search for Sub-level 1 -->
+              <div class="sublevel-search mb-4">
+                <input type="text" class="form-control search-input" placeholder="Search robots in Level 2.1..."
+                  data-target="collapseOne">
+              </div>
+              <div class="row g-4">
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="robot-card" data-name="Robot 1" data-pdf="assets/pdfs/Robot1.pdf"
+                    style="background-image: url('assets/imgs/Robot1.png');">
+                    <div class="robot-card-content">
+                      <h3 class="robot-title">Robot 1</h3>
+                      <p class="robot-description">Quạt máy - Làm quen bộ công cụ học</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="robot-card" data-name="Robot 2" data-pdf="assets/pdfs/Robot2.pdf"
+                    style="background-image: url('assets/imgs/Robot2.png');">
+                    <div class="robot-card-content">
+                      <h3 class="robot-title">Robot 2</h3>
+                      <p class="robot-description">Chuyển động chi tiết bánh răng</p>
+                    </div>
+                  </div>
+                </div>
+                 <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="robot-card" data-name="Robot 1" data-pdf="assets/pdfs/Robot1.pdf"
+                    style="background-image: url('assets/imgs/Robot1.png');">
+                    <div class="robot-card-content">
+                      <h3 class="robot-title">Robot 3</h3>
+                      <p class="robot-description">Quạt máy - Làm quen bộ công cụ học</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="robot-card" data-name="Robot 2" data-pdf="assets/pdfs/Robot2.pdf"
+                    style="background-image: url('assets/imgs/Robot2.png');">
+                    <div class="robot-card-content">
+                      <h3 class="robot-title">Robot 4</h3>
+                      <p class="robot-description">Chuyển động chi tiết bánh răng</p>
+                    </div>
+                  </div>
+                </div>
+                 <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="robot-card" data-name="Robot 1" data-pdf="assets/pdfs/Robot1.pdf"
+                    style="background-image: url('assets/imgs/Robot1.png');">
+                    <div class="robot-card-content">
+                      <h3 class="robot-title">Robot 5</h3>
+                      <p class="robot-description">Quạt máy - Làm quen bộ công cụ học</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="robot-card" data-name="Robot 2" data-pdf="assets/pdfs/Robot2.pdf"
+                    style="background-image: url('assets/imgs/Robot2.png');">
+                    <div class="robot-card-content">
+                      <h3 class="robot-title">Robot 6</h3>
+                      <p class="robot-description">Chuyển động chi tiết bánh răng</p>
+                    </div>
+                  </div>
+                </div>
+                 <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="robot-card" data-name="Robot 1" data-pdf="assets/pdfs/Robot1.pdf"
+                    style="background-image: url('assets/imgs/Robot1.png');">
+                    <div class="robot-card-content">
+                      <h3 class="robot-title">Robot 7</h3>
+                      <p class="robot-description">Quạt máy - Làm quen bộ công cụ học</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="robot-card" data-name="Robot 2" data-pdf="assets/pdfs/Robot2.pdf"
+                    style="background-image: url('assets/imgs/Robot2.png');">
+                    <div class="robot-card-content">
+                      <h3 class="robot-title">Robot 8</h3>
+                      <p class="robot-description">Chuyển động chi tiết bánh răng</p>
+                    </div>
+                  </div>
+                </div>
+                 <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="robot-card" data-name="Robot 1" data-pdf="assets/pdfs/Robot1.pdf"
+                    style="background-image: url('assets/imgs/Robot1.png');">
+                    <div class="robot-card-content">
+                      <h3 class="robot-title">Robot 9</h3>
+                      <p class="robot-description">Quạt máy - Làm quen bộ công cụ học</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="robot-card" data-name="Robot 2" data-pdf="assets/pdfs/Robot2.pdf"
+                    style="background-image: url('assets/imgs/Robot2.png');">
+                    <div class="robot-card-content">
+                      <h3 class="robot-title">Robot 10</h3>
+                      <p class="robot-description">Chuyển động chi tiết bánh răng</p>
+                    </div>
+                  </div>
+                </div>
+                 <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="robot-card" data-name="Robot 1" data-pdf="assets/pdfs/Robot1.pdf"
+                    style="background-image: url('assets/imgs/Robot1.png');">
+                    <div class="robot-card-content">
+                      <h3 class="robot-title">Robot 11</h3>
+                      <p class="robot-description">Quạt máy - Làm quen bộ công cụ học</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="robot-card" data-name="Robot 2" data-pdf="assets/pdfs/Robot2.pdf"
+                    style="background-image: url('assets/imgs/Robot2.png');">
+                    <div class="robot-card-content">
+                      <h3 class="robot-title">Robot 12</h3>
+                      <p class="robot-description">Chuyển động chi tiết bánh răng</p>
+                    </div>
+                  </div>
+                </div>
+                 <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="robot-card" data-name="Robot 1" data-pdf="assets/pdfs/Robot1.pdf"
+                    style="background-image: url('assets/imgs/Robot1.png');">
+                    <div class="robot-card-content">
+                      <h3 class="robot-title">Robot 13</h3>
+                      <p class="robot-description">Quạt máy - Làm quen bộ công cụ học</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="robot-card" data-name="Robot 2" data-pdf="assets/pdfs/Robot2.pdf"
+                    style="background-image: url('assets/imgs/Robot2.png');">
+                    <div class="robot-card-content">
+                      <h3 class="robot-title">Robot 14</h3>
+                      <p class="robot-description">Chuyển động chi tiết bánh răng</p>
+                    </div>
+                  </div>
+                </div>
+                 <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="robot-card" data-name="Robot 1" data-pdf="assets/pdfs/Robot1.pdf"
+                    style="background-image: url('assets/imgs/Robot1.png');">
+                    <div class="robot-card-content">
+                      <h3 class="robot-title">Robot 15</h3>
+                      <p class="robot-description">Quạt máy - Làm quen bộ công cụ học</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="robot-card" data-name="Robot 2" data-pdf="assets/pdfs/Robot2.pdf"
+                    style="background-image: url('assets/imgs/Robot2.png');">
+                    <div class="robot-card-content">
+                      <h3 class="robot-title">Robot 16</h3>
+                      <p class="robot-description">Chuyển động chi tiết bánh răng</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sub-level 2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <strong>Level 2.2</strong> - Alpha Series Nâng cao
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#subLevelAccordion">
+            <div class="accordion-body">
+              <!-- Search for Sub-level 2 -->
+              <div class="sublevel-search mb-4">
+                <input type="text" class="form-control search-input" placeholder="Search robots in Level 2.2..."
+                  data-target="collapseTwo">
+              </div>
+              <div class="row g-4">
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="robot-card" data-name="Robot 3" data-pdf="../../assets/pdfs/sample3.pdf"
+                    style="background-image: url('../../assets/images/placeholder.png');">
+                    <div class="robot-card-content">
+                      <h3 class="robot-title">Robot 3</h3>
+                      <p class="robot-description">Đua thuyền</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="robot-card" data-name="Robot 4" data-pdf="../../assets/pdfs/sample1.pdf"
+                    style="background-image: url('../../assets/images/placeholder.png');">
+                    <div class="robot-card-content">
+                      <h3 class="robot-title">Robot 4</h3>
+                      <p class="robot-description">Quạt máy - Làm quen bộ công cụ học</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sub-level 3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <strong>Level 2.3</strong> - Alpha Series Chuyên sâu
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#subLevelAccordion">
+            <div class="accordion-body">
+              <!-- Search for Sub-level 3 -->
+              <div class="sublevel-search mb-4">
+                <input type="text" class="form-control search-input" placeholder="Search robots in Level 2.3..."
+                  data-target="collapseThree">
+              </div>
+              <div class="row g-4">
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="robot-card" data-name="Robot 5" data-pdf="../../assets/pdfs/sample2.pdf"
+                    style="background-image: url('../../assets/images/placeholder.png');">
+                    <div class="robot-card-content">
+                      <h3 class="robot-title">Robot 5</h3>
+                      <p class="robot-description">Chuyển động chi tiết bánh răng</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="robot-card" data-name="Robot 6" data-pdf="../../assets/pdfs/sample3.pdf"
+                    style="background-image: url('../../assets/images/placeholder.png');">
+                    <div class="robot-card-content">
+                      <h3 class="robot-title">Robot 6</h3>
+                      <p class="robot-description">Đua thuyền</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sub-level 3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <strong>Level 2.3</strong> - Alpha Series Chuyên gia
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#subLevelAccordion">
+            <div class="accordion-body">
+              <!-- Search for Sub-level 4 -->
+              <div class="sublevel-search mb-4">
+                <input type="text" class="form-control search-input" placeholder="Search robots in Level 2.3..."
+                  data-target="collapseThree">
+              </div>
+              <div class="row g-4">
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="robot-card" data-name="Robot 5" data-pdf="../../assets/pdfs/sample2.pdf"
+                    style="background-image: url('../../assets/images/placeholder.png');">
+                    <div class="robot-card-content">
+                      <h3 class="robot-title">Robot 5</h3>
+                      <p class="robot-description">Chuyển động chi tiết bánh răng</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="robot-card" data-name="Robot 6" data-pdf="../../assets/pdfs/sample3.pdf"
+                    style="background-image: url('../../assets/images/placeholder.png');">
+                    <div class="robot-card-content">
+                      <h3 class="robot-title">Robot 6</h3>
+                      <p class="robot-description">Đua thuyền</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="pdfModal" tabindex="-1" aria-labelledby="pdfModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="pdfModalLabel">PDF Viewer</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <iframe id="pdfViewer" src="" width="100%" height="600px"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../../assets/js/matrix.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      // Global search in header
+      $("#searchForm").submit(function (event) {
+        event.preventDefault();
+        const searchInput = $("#searchInput").val().toLowerCase();
+        $(".robot-card").each(function () {
+          const itemName = $(this).data("name").toLowerCase();
+          if (itemName.includes(searchInput)) {
+            $(this).closest('[class*="col-"]').show();
+          } else {
+            $(this).closest('[class*="col-"]').hide();
+          }
+        });
+      });
+
+      // Sub-level specific search
+      $(".search-input").on("input", function () {
+        const searchValue = $(this).val().toLowerCase();
+        const targetSection = $(this).data("target");
+
+        $("#" + targetSection).find(".robot-card").each(function () {
+          const itemName = $(this).data("name").toLowerCase();
+          const itemDesc = $(this).find(".robot-description").text().toLowerCase();
+
+          if (itemName.includes(searchValue) || itemDesc.includes(searchValue)) {
+            $(this).closest('[class*="col-"]').show();
+          } else {
+            $(this).closest('[class*="col-"]').hide();
+          }
+        });
+      });
+
+      // Open PDF in a new tab
+      $(".robot-card").click(function () {
+        const pdfUrl = $(this).data("pdf");
+        if (pdfUrl) {
+          window.open(pdfUrl, "_blank");
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
