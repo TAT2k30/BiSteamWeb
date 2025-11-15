@@ -1,3 +1,138 @@
 /* Level 1 Specific Styles */
 
-/* Add custom styles for Level 1 here */
+.robot-card {
+  background-color: white;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  min-height: 350px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0;
+}
+
+.robot-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.robot-card::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: linear-gradient(to top, rgba(51, 51, 51, 0.95), transparent);
+  border-radius: 20px;
+  z-index: 0;
+}
+
+.robot-card-bg {
+  display: none;
+}
+
+.robot-card-content {
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.robot-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 8px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.robot-description {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.95);
+  line-height: 1.5;
+  margin: 0;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.robot-card:hover::before {
+  height: 55%;
+}
+
+/* Accordion Styles */
+.accordion {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.accordion-item {
+  background: white;
+  border: 2px solid #e0e0e0;
+  margin-bottom: 25px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.accordion-button {
+  background: white;
+  color: #333;
+  font-size: 1.8rem;
+  padding: 35px 40px;
+  border: none;
+  box-shadow: none;
+  font-weight: 700;
+}
+
+.accordion-button:not(.collapsed) {
+  background: white;
+  color: #2f4ae4;
+  box-shadow: none;
+}
+
+.accordion-button:hover {
+  background: #f8f9fa;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  border: none;
+}
+
+.accordion-button::after {
+  filter: none;
+  background-size: 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.accordion-body {
+  padding: 40px 30px;
+  background: #ffffff;
+}
+
+/* Sub-level Search */
+.sublevel-search {
+  max-width: 500px;
+  margin: 0 auto 30px;
+}
+
+.search-input {
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #2f4ae4;
+  box-shadow: 0 0 0 0.2rem rgba(47, 74, 228, 0.25);
+  outline: none;
+}
